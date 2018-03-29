@@ -1,4 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center|right"
+                android:text=""
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBorrar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="4"
+                android:background="@android:color/darker_gray"
+                android:onClick="Clic"
+                android:text="DEL"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="1" />
+
+
+                <Button
+                    android:id="@+id/btnCero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="2" />
+
+
+                <Button
+                    android:id="@+id/btnPunto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="3" />
+
+
+                <Button
+                    android:id="@+id/btnSuma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/colorError"
+                    android:onClick="Clic"
+                    android:text="C"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnDivision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="/" />
+
+                <Button
+                    android:id="@+id/btnMultiplicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="*"/>
+
+
+                <Button
+                    android:id="@+id/btnResta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/btnIgual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="@android:color/background_light"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:onClick="Clic"
+                    android:text="=" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +296,7 @@
     android:layout_height="match_parent"
     android:background="?attr/colorButtonNormal"
     android:paddingTop="0dp"
-    tools:context="com.example.degon.calcu.MainActivity">
+    tools:context="com.e.yovany.sv.edu.uesoc.calculadora.MainActivity">
 
 
     <TextView
@@ -27,14 +317,14 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="95dp"
         android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="@android:color/darker_gray"
-        android:text="Button"
+        android:onClick="Clic"
+        android:text="7"
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:text="7" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btn8"
@@ -45,6 +335,7 @@
         android:layout_toEndOf="@+id/btn7"
         android:layout_toRightOf="@+id/btn7"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="8"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -58,6 +349,7 @@
         android:layout_toEndOf="@+id/btn8"
         android:layout_toRightOf="@+id/btn8"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="9"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -67,10 +359,11 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="95dp"
         android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/btn7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="4"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -84,6 +377,7 @@
         android:layout_toEndOf="@+id/btn7"
         android:layout_toRightOf="@+id/btn7"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="5"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -97,6 +391,7 @@
         android:layout_toEndOf="@+id/btn5"
         android:layout_toRightOf="@+id/btn5"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="6"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -106,14 +401,14 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="95dp"
         android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/btn4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="@android:color/darker_gray"
-        android:text="Button"
+        android:onClick="Clic"
+        android:text="1"
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:text="1" />
+        android:textSize="30sp"/>
 
     <Button
         android:id="@+id/btn2"
@@ -124,6 +419,7 @@
         android:layout_toEndOf="@+id/btn4"
         android:layout_toRightOf="@+id/btn4"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="2"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -137,6 +433,7 @@
         android:layout_toEndOf="@+id/btn5"
         android:layout_toRightOf="@+id/btn5"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="3"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -146,10 +443,11 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="99dp"
         android:layout_height="60dp"
+        android:layout_below="@+id/textView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="/"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -163,20 +461,21 @@
         android:layout_toEndOf="@+id/btn9"
         android:layout_toRightOf="@+id/btn9"
         android:background="@android:color/darker_gray"
-        android:text="Button"
+        android:onClick="Clic"
+        android:text="*"
         android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:text="*" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnBorrar"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="95dp"
         android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/btn1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="C"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -190,6 +489,7 @@
         android:layout_toEndOf="@+id/btn6"
         android:layout_toRightOf="@+id/btn6"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="-"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -203,6 +503,7 @@
         android:layout_toEndOf="@+id/btnBorrar"
         android:layout_toRightOf="@+id/btnBorrar"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="0"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -216,6 +517,7 @@
         android:layout_toEndOf="@+id/btn3"
         android:layout_toRightOf="@+id/btn3"
         android:background="@android:color/holo_green_dark"
+        android:onClick="Clic"
         android:text="="
         android:textColor="@android:color/background_light"
         android:textSize="30sp" />
@@ -229,6 +531,7 @@
         android:layout_toEndOf="@+id/btn3"
         android:layout_toRightOf="@+id/btn3"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="+"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
@@ -242,7 +545,10 @@
         android:layout_toEndOf="@+id/btn2"
         android:layout_toRightOf="@+id/btn2"
         android:background="@android:color/darker_gray"
+        android:onClick="Clic"
         android:text="."
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
 </RelativeLayout>
+
+-->
